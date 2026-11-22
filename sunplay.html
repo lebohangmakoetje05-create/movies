@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="movie style.css">
+
+<title>sunplay.com</title>
+
+<style>
+</style>
+</head>
+
+<body>
+
+<header>
+ 
+    <div class="logo">SunPlay</div>
+
+    <div class="search">
+        <input type="text" id="searchInput"
+        placeholder="Search videos...">
+        <button onclick="searchVideos()">Search</button>
+    </div>
+   <nav>
+        <a href="sunplay.html">Home</a>
+        <a href="Action.html">Action</a>
+        <a href="horror.html">Horror</a>
+        <a href="comedy.html">Comedy</a>
+        <a href="romance.html">Romance</a>
+        <a href="anime.html">Anime</a>
+        <a href="series.html">Series</a>
+    </nav>
+    <div class="profile">Sign in</div>
+</header>
+
+<div class="sidebar">
+    <a href="sunplay.html" onclick="filterCategory('All')">Home</a>
+    <a href="Action.html" onclick="filterCategory('Action')">Action</a>
+    <a href="horror.html" onclick="filterCategory('Horror')">Horror & Thriller</a>
+    <a href="comedy.html" onclick="filterCategory('Comedy')">Comedy</a>
+    <a href="romance.html" onclick="filterCategory('Romance')">Romance & Romcom</a>
+    <a href="anime.html" onclick="filterCategory('Anime')">Anime</a>
+    <a href="series.html" onclick="filterCategory('Series')">Series</a>
+    <a href="#" onclick="filterCategory('All')">Subscriptions</a>
+    <a href="#" onclick="filterCategory('All')">History</a>
+
+</div>
+
+<main>
+
+    <div class="player-section" id="playerSection">
+        <button class="close-player" onclick="closePlayer()">
+            ✕ Close video
+        </button>
+
+        <h2 id="playingTitle"></h2>
+    </div>
+
+    <div class="video-grid" id="videoGrid">
+
+        <div class="video-card" data-category="Movies"
+        data-title="Grab Your Popcorns and Enjoy the Ride"
+        onclick="playVideo(this)">
+
+        <img src="godzilla.jpg" width="500px" height="350px" />
+            <h3>Action</h3>
+            <p>20M streams & downloads</p>
+            <p>Top 30</p>
+        </div>
+
+        <div class="video-card" data-category="Gaming"
+        data-title="+18 Viewer Discretion"
+        onclick="playVideo(this)">
+
+            <img src="Horror.jpg" width="500px" height="350px" />
+            <h3>Horror & Thriller</h3>
+            <p>9M streams & downloads</p>
+            <p>Top 20</p>
+        </div>
+
+        <div class="video-card" data-category="Comedy"
+        data-title="Bust Out laughing"
+        onclick="playVideo(this)">
+
+            <img src="Man vs bee.jpg" width="500px" height="350px" />
+            <h3>Comedy</h3>
+            <p>40M streams & downloads</p>
+            <p>Top 10</p>
+        </div>
+
+        <div class="video-card" data-category="Romance"
+        data-title="+18 Explicite Content"
+        onclick="playVideo(this)">
+
+        <img src="romance.jpg" width="500px" height="350px" />   
+            <h3>Romance & Romcom</h3>
+            <p>14M streams & downloads</p>
+            <p>Top 10</p>
+        </div>
+
+        <div class="video-card" data-category="Animation"
+        data-title="New History"
+        onclick="playVideo(this)">
+
+        <img src="Monkey D.jpg" width="500px" height="350px" />    
+            <h3>Anime</h3>
+            <p>17M streams & downloads</p>
+            <p>Top 20</p>
+        </div>
+
+        <div class="video-card" data-category="Music"
+        data-title="Do Not Miss Out"
+        onclick="playVideo(this)">
+
+        <img src="hanna.jpg" width="500px" height="350px" />
+            <h3>Series</h3>
+            <p>6M streams & downloads</p>
+            <p>Top 20</p>
+        </div>
+
+    </div>
+
+</main>
+
+<script>
+document.getElemenetById('Action').inner
+
+</script>
+
+</body>
+</html>

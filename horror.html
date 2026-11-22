@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="movie style.css">
+<title>sunplay.com</title>
+
+
+</head>
+
+<body class="body">
+
+<header>
+    <div class="logo">SunPlay</div>
+
+    <div class="search">
+        <input type="text" id="searchInput"
+        placeholder="Search videos...">
+        <button onclick="searchVideos()">Search</button>
+    </div>
+    <nav>
+        <a href="sunplay.html">Home</a>
+        <a href="Action.html">Action</a>
+        <a href="horror.html">Horror</a>
+        <a href="comedy.html">Comedy</a>
+        <a href="romance.html">Romance</a>
+        <a href="anime.html">Anime</a>
+        <a href="series.html">Series</a>
+    </nav>
+
+    <div class="profile">Sign in</div>
+</header>
+<main>
+
+    <div class="player-section" id="playerSection">
+        <button class="close-player" onclick="closePlayer()">
+            ✕ Close video
+        </button>
+
+        <h2 id="playingTitle"></h2>
+    </div>
+
+    </div>
+
+
+    <div class="video-grid" id="videoGrid">
+
+        <div class="video-card" data-category="Actions"
+        data-title="Grab Your Popcorns and Enjoy the Ride"
+        data-link="https://ww1.goojara.to/go.php?url=YzFHeU13MTF6V1l6RGZOS2ZVcTVrZkJKbk5pWnc0WkNSMEdQQVVrNDQrZz0"
+        onclick="playVideo(this)">
+
+        <img src="godzilla.jpg" width="500px" height="350px" />
+            <h3>Godzilla vs King Kong</h3>
+            <p>20M streams & downloads</p>
+        </div>
+
+        <div class="video-card" data-category="Action"
+        data-title="+18 Viewer Discretion"
+        data-link="https://ww1.goojara.to/go.php?url=NlA0RWFPcWJ1Q1VTTWtmUkJHc0c3M1pnODRkT1A1bGNYaENSM3dEUnhsTT0"
+        onclick="playVideo(this)">
+
+            <img src="spiderman.jpg" width="500px" height="350px" />
+            <h3>Spiderman Brand New Day</h3>
+            <p>9M streams & downloads</p>
+        </div>
+
+        <div class="video-card" data-category="Action"
+        data-title=""
+        data-link="https://ww1.goojara.to/go.php?url=S3p4QXIzMkMxY0FPNUNqeHV1S25UdHZxRWo3dHYrWnRUSnBnMHQ4NkxxZz0"
+        onclick="playVideo(this)">
+
+            <img src="john wick.webp" width="500px" height="350px" />
+            <h3>John Wick</h3>
+            <p>40M streams & downloads</p>
+        </div>
+
+        <div class="video-card" data-category="Action"
+        data-title=""
+        data-link="https://ww1.goojara.to/go.php?url=dU9kRmJIWVVqYzE5akNuTzd5ZFpMbnFjSDhUSTE4UGZRVFJmYURnMWt6VT0"
+        onclick="playVideo(this)">
+
+        <img src="Uncharted!.jpg" width="500px" height="350px" />   
+            <h3>Uncharted</h3>
+            <p>14M streams & downloads\</p>
+        </div>
+
+        <div class="video-card" data-category="Animation"
+        data-title="New History"
+        data-link="https://www.youtube.com/watch?v=irVNGjRFZGk"
+        onclick="playVideo(this)">
+
+        <img src="doomsday.jpg" width="500px" height="350px" />    
+            <h3>Doomsday (Trailer)</h3>
+            <p>17M streams & downloads</p>
+        </div>
+
+        <div class="video-card" data-category="Music"
+        data-title="Do Not Miss Out"
+        data-link="https://ww1.goojara.to/go.php?url=VC9EYkpVMHA3dEYzZjUybUlXb1VFSkFBWXJHaVQ5T2kwc1c0TGk2MGdyTT0"
+        onclick="playVideo(this)">
+       
+           <video width="300px" controls autoplay>
+       <source src="SUPERGIRL.mp4" type="video/mp4">
+
+   </video>
+            <h3>Supergirl</h3>
+            <p>6M streams & downloads</p>
+            <p>16+</p>
+        </div>
+
+    </div>
+
+</main>
+
+<script>
+    function playVideo(card){
+        let videoLink=card.getAttribute("data-link");
+        window.open(videoLink, "blank");
+    }
+   
+
+</script>
+
+</body>
+</html>
+
